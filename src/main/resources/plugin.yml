@@ -1,4 +1,4 @@
-name: Twasi Example Plugin and Boilerplate
+name: example-plugin
 main: net.twasi.exampleplugin.ExamplePlugin
 author: Twasi Team
 description: Prints out Hello World if command !hello is issued.
