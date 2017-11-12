@@ -4,6 +4,11 @@ author: Twasi Team
 description: Prints out Hello World if command !hello is issued.
 version: 1.0
 
+# This defines if the onMessage event should be called on incoming messages.
+# You should only use this if you need this. To keep everything running
+# smoothly and fast, please don't block for too long onMessage.
+messageHandler: true
+
 # Call our plugins Command Handler if !hello is executed.
 # You have to register all your plugins commands here
 # if you want to get all messages, please use onMessage.

@@ -1,6 +1,8 @@
 package net.twasi.exampleplugin;
 
+import net.twasi.core.logger.TwasiLogger;
 import net.twasi.core.models.Message.Command;
+import net.twasi.core.models.Message.Message;
 import net.twasi.core.plugin.api.TwasiPlugin;
 
 public class ExamplePlugin extends TwasiPlugin {
@@ -27,5 +29,13 @@ public class ExamplePlugin extends TwasiPlugin {
             // then be kind and return a hello world
             command.reply("Hello World!");
         }
+    }
+
+    @Override
+    public void onMessage(Message msg) {
+        // This is called when a message is sent to any channel the bot is operating in.
+        // You have to register for this event in plugin.yml
+        // To save performance please only use it if you have to.
+        TwasiLogger.log.info("Incoming message dispatched to example-plugin: " + msg.getMessage() + " by sender " + msg.getSender());
     }
 }
