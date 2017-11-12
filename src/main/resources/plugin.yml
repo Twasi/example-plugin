@@ -1,0 +1,12 @@
+name: Twasi Example Plugin and Boilerplate
+main: net.twasi.exampleplugin.ExamplePlugin
+author: Twasi Team
+description: Prints out Hello World if command !hello is issued.
+version: 1.0
+
+# Call our plugins Command Handler if !hello is executed.
+# You have to register all your plugins commands here
+# if you want to get all messages, please use onMessage.
+# Please only use lowercase.
+commands:
+  - hello
