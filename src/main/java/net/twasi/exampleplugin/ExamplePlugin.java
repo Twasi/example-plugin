@@ -1,5 +1,6 @@
 package net.twasi.exampleplugin;
 
+import net.twasi.core.interfaces.api.TwasiInterface;
 import net.twasi.core.logger.TwasiLogger;
 import net.twasi.core.models.Message.Command;
 import net.twasi.core.models.Message.Message;
@@ -17,6 +18,11 @@ public class ExamplePlugin extends TwasiPlugin {
     public void onDisable() {
         // This is called when the plugin is disabled, e.g. before shutdown.
         // Please close here all open resources and save changes.
+    }
+
+    @Override
+    public void onInstall(TwasiInterface inf) {
+        // This is called once per interface. You can here set some things up (e.g in the database)
     }
 
     @Override
