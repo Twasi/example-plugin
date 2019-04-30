@@ -1,5 +1,5 @@
 name: example-plugin
-main: net.twasi.exampleplugin.ExamplePlugin
+main: net.twasiplugin.exampleplugin.ExamplePlugin
 author: Twasi Team
 description: Prints out Hello World if command !hello is issued.
 version: 1.0
